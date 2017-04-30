@@ -9,6 +9,7 @@
 </jsp:useBean>
 <%
   database.connectDB();
+  request.setCharacterEncoding("UTF-8");
   database.query("select * from tra_intro;");
   ResultSet rs = database.getRS();
 

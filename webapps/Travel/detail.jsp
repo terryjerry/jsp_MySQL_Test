@@ -8,6 +8,7 @@
   <jsp:setProperty property="password" name="database" value="jspuser"/>
 </jsp:useBean>
 <%
+  request.setCharacterEncoding("UTF-8");
   String id = request.getParameter("id");
   database.connectDB();
   String sql = "select * from tra_intro where id = " + id;
